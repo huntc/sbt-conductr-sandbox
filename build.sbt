@@ -3,7 +3,7 @@ import bintray.Keys._
 
 sbtPlugin := true
 
-organization := "com.typesafe.sbt"
+organization := "com.typesafe.conductr"
 name := "sbt-conductr-sandbox"
 
 scalaVersion := "2.10.4"
@@ -22,7 +22,9 @@ ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(DoubleIndentClassDeclaration, true)
   .setPreference(PreserveDanglingCloseParenthesis, true)
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-bundle" % "1.0.0")
+resolvers += Resolver.bintrayRepo("typesafe", "maven-releases")
+addSbtPlugin("com.typesafe.sbt" % "sbt-bundle"        % "1.0.0")
+addSbtPlugin("com.typesafe.conductr" % "sbt-conductr" % "1.0.0")
 
 releaseSettings
 ReleaseKeys.versionBump := sbtrelease.Version.Bump.Minor

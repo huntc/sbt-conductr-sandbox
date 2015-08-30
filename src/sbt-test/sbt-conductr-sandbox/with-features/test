@@ -1,0 +1,7 @@
+> sandbox run --withFeatures visualization logging
+
+> checkPorts
+
+> checkEnvs
+
+> sandbox stop
