@@ -15,4 +15,6 @@ BundleKeys.startCommand := Seq("-Xms1G")
 BundleKeys.configurationName := "frontend"
 
 SandboxKeys.ports in Global := Set(9999)
+SandboxKeys.imageVersion in Global := "0.3.0"
+
 SandboxKeys.debugPort := 5432

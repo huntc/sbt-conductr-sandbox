@@ -88,7 +88,7 @@ object ConductRSandbox extends AutoPlugin {
     }
   }
 
-  private final val ConductRDevImage = "typesafe-docker-internal-docker.bintray.io/conductr/conductr-dev:0.2.0"
+  private final val ConductRDevImage = "typesafe-docker-internal-docker.bintray.io/conductr/conductr-dev"
 
   private final val ConductrNamePrefix = "cond-"
 
